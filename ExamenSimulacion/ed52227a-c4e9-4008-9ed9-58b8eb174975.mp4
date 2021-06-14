@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="async-loader-show-spinner">
+<head>
+<link rel="manifest" href="./manifest.webmanifest" />
+
+<meta http-equiv="origin-trial" content="AnmXpMaTArRIWJEl9R8yf9qep85v8R8idNPJ+Th7mm0Ru42AFznDGYcBR/SJQxXQZObH3D2gTEkrsoFlQaE9mgEAAABpeyJvcmlnaW4iOiJodHRwczovL2NsaXBjaGFtcC5jb206NDQzIiwiZmVhdHVyZSI6IldlYkFzc2VtYmx5U2ltZCIsImV4cGlyeSI6MTYyMzgwMTU5OSwiaXNTdWJkb21haW4iOnRydWV9" />
+
+<meta http-equiv="origin-trial" content="Ar0VQuAiMKJ0cf9K5UOLvF9dDY9qIm1OruHKrPh57ZWi6cPr/7bzDJRICXIlS/SCUIRdyEnNtBmT2WyNbro+FgAAAABjeyJvcmlnaW4iOiJodHRwczovL2NsaXBjaGFtcC5jb206NDQzIiwiZmVhdHVyZSI6IldlYkNvZGVjcyIsImV4cGlyeSI6MTYyNjIyMDc5OSwiaXNTdWJkb21haW4iOnRydWV9" />
+
+<meta http-equiv="origin-trial" content="AomihqXxljciPhIclyx307t3f3numCxEo25Abgu24PxZNxNXclVYRukaTH83axZsrNMjAED7nnN6smX+a1lMzQIAAABmeyJvcmlnaW4iOiJodHRwczovL2NsaXBjaGFtcC5jb206NDQzIiwiZmVhdHVyZSI6IkRpZ2l0YWxHb29kcyIsImV4cGlyeSI6MTYyNjIyMDc5OSwiaXNTdWJkb21haW4iOnRydWV9" />
+<meta name="theme-color" content="#665dc3" />
+<meta charset="utf-8" />
+<title>Clipchamp - free online video editor & video maker</title>
+<meta name="description" content="Use Clipchamp to make awesome videos from scratch or start with a template to save time. Edit videos, audio tracks and images like a pro without the price tag." />
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=8gNvl_62jnOKk4Osz7U9gsSFfK241YRRhATAeYy5nyLufnkCU-Zpqsd9UQ_8lW9i8feDfIopwhySZRy8LIivES2EAUc-RA3YUT1s5sJwtdvOKWzQzwiEHH1mstUxgk96" charset="UTF-8"></script><base href="/" />
+<script src="/browser-guard.1216fc58d4ac141728f7.js"></script>
+
+<link rel="preconnect" href="https://flags.clipchamp.com" />
+<link rel="preconnect" href="https://connect.facebook.net" />
+<link rel="preconnect" href="https://www.facebook.com" />
+<link rel="preconnect" href="https://www.google-analytics.com" />
+<link rel="preconnect" href="https://fast.appcues.com" />
+<link rel="preconnect" href="https://js.intercomcdn.com" />
+<link rel="preconnect" href="https://api-iam.intercom.io" />
+<link rel="preconnect" href="https://api.amplitude.com" />
+<link rel="preconnect" href="https://api.getvero.com" />
+<link rel="preconnect" href="https://content.clipchamp.com" />
+<link rel="preconnect" href="https://content-repo.clipchamp.com" />
+<link rel="preconnect" href="https://static.hotjar.com" />
+
+<link rel="preload" href="/v2/location" as="fetch" crossorigin />
+
+<link rel="prefetch" href="/assets/common/images/login.webp" as="image" />
+<link rel="prefetch" href="/ngsw-worker.js" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/x-icon" href="favicon.svg" />
+
+<style>
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes TopFrameAnimate {
+                0%,
+                16.6% {
+                    transform: translate(3.25rem, 3.5rem);
+                }
+
+                33.3% {
+                    transform: translate(-1.5rem, 3.5rem);
+                }
+
+                50% {
+                    transform: translate(-1.5rem, -0.5rem);
+                }
+
+                63.3% {
+                    transform: translate(0, -0.5rem);
+                }
+
+                86.6%,
+                100% {
+                    transform: translate(0, 0);
+                }
+            }
+
+            @keyframes BottomFrameAnimate {
+                0%,
+                16.6% {
+                    transform: translate(-3.25rem, -3.5rem);
+                }
+
+                33.3% {
+                    transform: translate(1.5rem, -3.5rem);
+                }
+
+                50% {
+                    transform: translate(1.5rem, 0.5rem);
+                }
+
+                63.3% {
+                    transform: translate(0, 0.5rem);
+                }
+
+                86.6%,
+                100% {
+                    transform: translate(0, 0);
+                }
+            }
+
+            @keyframes CAnimate {
+                0%,
+                18.75% {
+                    stroke-dashoffset: 185;
+                }
+
+                50%,
+                100% {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            @keyframes CAnimateLetter {
+                0%,
+                25% {
+                    transform: scale(0.7) rotate(120deg);
+                }
+
+                50% {
+                    transform: scale(1.2);
+                }
+
+                63.3% {
+                    transform: scale(1.1);
+                }
+
+                86.6%,
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            .async-hide .async-loader-container,
+            .async-loader-show-spinner .async-loader-container {
+                display: flex;
+            }
+
+            .async-loader-container {
+                display: none;
+                background: #fff;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .async-loader-container .spinner {
+                width: 18.75rem;
+                height: 18.75rem;
+                border-radius: 3rem;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation-fill-mode: both;
+                animation: fadeIn ease-out 1s;
+            }
+
+            .async-loader-container .spinner .frame {
+                width: 6.25rem;
+                height: auto;
+                position: absolute;
+            }
+
+            .async-loader-container .spinner .frame-top {
+                top: 3rem;
+                left: 3rem;
+                animation: TopFrameAnimate 2s alternate infinite;
+            }
+
+            .async-loader-container .spinner .frame-bottom {
+                bottom: 3rem;
+                right: 3rem;
+                animation: BottomFrameAnimate 2s alternate infinite;
+            }
+
+            .async-loader-container .spinner .letter-c {
+                animation: CAnimateLetter 2s alternate infinite;
+                transform-origin: center;
+                width: 4.375rem;
+            }
+
+            .async-loader-container .spinner .letter-c path {
+                animation: CAnimate 2s alternate infinite;
+                stroke-dasharray: 185;
+                stroke: #211e4f;
+            }
+
+            .cdk-global-scrollblock {
+                position: static;
+                overflow: hidden !important;
+            }
+        </style>
+<link rel="stylesheet" href="styles.8e2ed8abe419a3785f43.css"></head>
+<body>
+<cc-root></cc-root>
+<div class="async-loader-container">
+<div class="spinner" data-testid="async-loader-spinner">
+<svg class="letter-c" viewBox="0 0 93 108">
+<path d="M82 26.4228C76.5111 20.9686 69.5178 17.2542 61.9045 15.7494C54.2912 14.2446 46.3998 15.0169 39.2282 17.9687C32.0567 20.9205 25.927 25.9193 21.6144 32.3328C17.3018 38.7463 15 46.2865 15 54C15 61.7135 17.3018 69.2537 21.6144 75.6672C25.927 82.0807 32.0567 87.0795 39.2282 90.0313C46.3998 92.9831 54.2912 93.7554 61.9045 92.2506C69.5178 90.7458 76.5111 87.0314 82 81.5772" fill="none" stroke="white" stroke-width="30" />
+</svg>
+<svg class="frame frame-top" viewBox="0 0 134 94">
+<path d="M29.63 0H0V93.8283H29.63V0Z" fill="#5A4CDB" />
+<path d="M133.335 0H0V29.63H133.335V0Z" fill="#468BE8" />
+</svg>
+<svg class="frame frame-bottom" viewBox="0 0 134 95">
+<path d="M133.67 0.841675H104.04V94.67H133.67V0.841675Z" fill="#5A4CDB" />
+<path d="M133.67 65.04H0.334961V94.67H133.67V65.04Z" fill="#AD58DB" />
+</svg>
+</div>
+</div>
+<script src="runtime.aa5f199527341c2da660.js" defer></script><script src="polyfills.24a2b6b3462ddd0b7401.js" defer></script><script src="scripts.d99292e49411a8d8f0d8.js" defer></script><script src="main.de34c75c583f19971a11.js" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"65c7d778196a275d","token":"d9048e7b648841d69fb05f5dfb81fd12","version":"2021.5.2","si":10}'></script>
+</body>
+</html>
